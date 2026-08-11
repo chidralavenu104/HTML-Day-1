@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action = "/register" method = "post">
+      
+        <label for = "name">Name:</label>
+        <input id = "name" name = "name" type = "text" placeholder = "Enter your name" required>
+        <br><br>
+        <label for = "email">Email:</label>
+        <input id = "email" name = "email" type = "email" placeholder = "Enter your email" required>
+        <br><br>
+        <label for = "password">Password:</label>
+        <input id = "password" name = "password" type = "password" placeholder = "Enter your password" required>
+        <br><br>
+        <label for = "age">Age:</label>
+        <input id = "age" name = "age" type = "number" placeholder = "Enter your age" required>
+        <br><br>
+        <label for = "dob">Date of Birth:</label>   
+        <input id = "dob" name= "dob" type = "date"required>
+        <br><br>
+
+        <textarea id = "message" name = "message" placeholder="enter your message" rows ="5" cols="20"></textarea>
+        <br><br>
+        <label for = "gender">Gender:</label>
+        <input id = "male" type = "radio" name = "gender" value = "male"><label for = "male">Male</label>
+        <input id = "female" type = "radio" name = "gender" value = "female"><label for = "female">Female</label>
+        <br><br>
+
+        <label>Skills:</label>
+        <input id="HTML" type = "checkbox" name = "skills" value = "HTML"><label for = "HTML">HTML</label>
+        <input id="CSS" type = "checkbox" name = "skills" value = "CSS"><label for = "CSS">CSS</label>
+        <input id="JavaScript" type = "checkbox" name = "skills" value = "JavaScript"><label for = "JavaScript">JavaScript</label>
+        <input id="React" type = "checkbox" name = "skills" value = "React"><label for = "React">React</label>
+        <input id="Nodejs" type = "checkbox" name = "skills" value = "Node.js"><label for = "Node.js">Node.js</label>
+        <br><br>
+
+        <label for = "course">Course:</label>
+        <select name = "course" id = "course" aria-placeholder="select">
+            <option  value = "">Select a course</option>
+            <option value = "full-stack">Full Stack Development</option>
+            <option value = "frontend">Frontend Development</option>
+            <option value = "backend">Backend Development</option>
+            </select>   
+
+<br><br>
+            <input type="reset" value="Reset">
+        <br><br>
+        <input type = "submit" value = "Register">
+    </form>
+       
+</body>
+</html>
