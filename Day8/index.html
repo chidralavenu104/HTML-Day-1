@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1> Job Application Form </h1>
+    </header>
+    <main>
+        <form>
+            <label for="name">1.Full Name*</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" minlength="2" maxlength="30"
+                required>
+            <br><br>
+            <label for="email">2.Email*</label>
+            <br>
+            <input type="email" autocomplete="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="phone">3.Phone Number*</label>
+            <br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Enter your phone number" pattern="[0-9]{10}"
+                required>
+            <br><br>
+            <label for="Age">4.Age*</label>
+            <br>
+            <input type="number" id="age" name="age" placeholder="Enter your age"  min="18" max="50" step="1" required>
+            <br><br>
+            <label for="password">5.Password*</label>
+            <br>
+            <input type="password" id="password" autocomplete="password" placeholder="Enter your password" minlength="8"
+                maxlength="20" required>
+            <br><br>
+            <label for="gender">6.Gender*</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            <br><br>
+            <label for="job">7.Job Type*</label>
+            <br>
+            <select id="job" name="job" required>
+                <option value="Select a job type" selected>Select a job type</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+            </select>
+            <br><br>
+            <label for="resume">8.Upload Resume*</label>
+            <br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" multiple required>
+            <br><br>
+            <label for="message">9.Message</label>
+            <br>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50"></textarea>
+            <br><br>
+            <label for="experience">10.Experience*</label>
+            <br>
+            <input type="number" id="experience" name="experience" step="1" placeholder="Enter your experience in years" min="0"
+                max="10" required>
+            <br><br>
+            <label for="application-id">11.Application ID*</label>
+            <br>
+            <input type="text" id="application-id" name="application-id" value="JOB-001" readonly>
+            <br><br>
+            <label>12.Skills*</label>
+            <br>
+            <input type="checkbox" value="HTML" name="HTML" id="HTML" checked><label for="HTML">HTML</label>
+            <input type="checkbox" value="css" name="css" id="css" checked><label for="css">css</label>
+            <input type="checkbox" value="js" name="js" id="js" checked><label for="js">js</label>
+            <input type="checkbox" value="react" name="react" id="react" checked><label for="react">react</label>
+            <br><br>
+            <label for="student">13.Student*</label>
+            <br>
+            <input type="text" value="not available" disabled>
+           <br><br>
+           <input type="reset" value="Reset">
+           <input type="submit" value="Apply">
+
+        </form>
+    </main>
+</body>
+
+</html>
